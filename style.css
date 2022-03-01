@@ -1,14 +1,18 @@
-*{
-    padding: 0;
+html{
+    font-size: 100%;
+}
+body{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 .login_panel{
     float: right;
-    margin: 20px 50px 20px 0;
-    max-width: 30%;
-    margin-top: 10%;
-    /* background-color: gainsboro; */
+    margin: 2rem 2rem;
+    width: 15rem;
+    padding: 5px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
     font-family: 'Hubballi', cursive;
 }
 .background img{
@@ -48,7 +52,7 @@
 .login_panel .input_field input:hover,
 .login_panel .input_field input:focus,
 .login_panel .input_field input:valid{
-    border-bottom: 2px solid cadetblue;
+    border-bottom: 3px solid cadetblue;
 }
 .login_panel .input_field input:hover ~ label,
 .login_panel .input_field input:focus ~ label,
@@ -86,4 +90,21 @@
 .login_panel .signup{
     text-align: center;
     margin: 20px 0;
+}
+@media screen and (max-width: 820px) {
+    .login_panel{
+        float: none;
+        margin: auto;
+        margin-top: 5%;
+        width: 90%;
+        font-size: 1.75rem;
+    }
+    .login_panel .input_field label{
+        top: -2.5rem;
+    }
+    .login_panel .input_field input:hover ~ label,
+    .login_panel .input_field input:focus ~ label,
+    .login_panel .input_field input:valid ~ label{
+        top: -4.5rem;
+    }
 }
