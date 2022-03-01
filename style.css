@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.login_panel{
+    float: right;
+    margin: 20px 50px 20px 0;
+    max-width: 30%;
+    margin-top: 10%;
+    /* background-color: gainsboro; */
+    font-family: 'Hubballi', cursive;
+}
+.background img{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    z-index: -1;
+}
+.login_panel h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.login_panel form{
+    padding: 0 30px;
+}
+.login_panel .input_field label{
+    pointer-events: none;
+    position: relative;
+    top: -55px;
+    color: #adadad;
+    transition: .5s;
+}
+.login_panel .input_field input{
+    margin: 20px 0;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 3px solid gray;
+    background: none;
+    outline: none;
+    font-size: large;
+    font-family: 'Hubballi', cursive;
+    font-weight: bold;
+}
+.login_panel .input_field input:hover,
+.login_panel .input_field input:focus,
+.login_panel .input_field input:valid{
+    border-bottom: 2px solid cadetblue;
+}
+.login_panel .input_field input:hover ~ label,
+.login_panel .input_field input:focus ~ label,
+.login_panel .input_field input:valid ~ label{
+    top: -85px;
+    color: cadetblue;
+    font-weight: bold;
+}
+.login_panel a{
+    text-decoration: none;
+    color: cadetblue;
+}
+.login_panel a:hover{
+    font-weight: bold;
+}
+.login_panel a.forgot_pass{
+    display: block;
+    margin-bottom: 20px;
+}
+.login_panel input[type="submit"]{
+    width: 100%;
+    height: 2rem;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-color: cadetblue;
+    cursor: pointer;
+    font-family: 'Hubballi', cursive;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+.login_panel input[type="submit"]:hover{
+    background-color: rgb(71, 119, 121);
+}
+.login_panel .signup{
+    text-align: center;
+    margin: 20px 0;
+}
