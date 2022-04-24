@@ -1426,7 +1426,7 @@ nav ul li >.logo{
 }
 nav ul li >*:not(.logo){
     padding-left: 1em;
-    line-height: 10vh;
+    line-height: 1.5vh;
     display: block;
     width: 100%;
     text-decoration: none;
