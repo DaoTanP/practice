@@ -576,20 +576,17 @@ line breaks.
     </header>
 
     <nav>
+        <div class="nav-header">
+            <label for="nav-toggle" class="nav-toggle-btn"></label>
+            <a class="font-cursive font-lg">Flat</a>
+        </div>
         <ul>
-            <li class="display-block pad-lr-md">
-                <div class="logo">
-                    <label for="nav-toggle" class="nav-toggle-btn"></label>
-                    <a class="font-cursive font-lg">Flat</a>
-                </div>
-            </li>
             <li><a><span class="material-icons">search</span>Search</a></li>
             <li>
                 <div class="accordion">
                     <input type="checkbox" id="account-nav" checked class="disappeared accordion-toggle">
-                    <label for="account-nav" class="nav-selected accordion-label font-weight-600 pad-r-md">
-                        <span class="material-icons">manage_accounts</span>
-                        Account
+                    <label for="account-nav" class="accordion-label font-weight-600 pad-r-md">
+                        <span class="material-icons">manage_accounts</span>Account
                     </label>
                     <ul class="accordion-content fluid">
                         <li class="nav-selected"><a>Profile</a></li>
@@ -602,8 +599,7 @@ line breaks.
                 <div class="accordion">
                     <input type="checkbox" id="b" class="disappeared accordion-toggle">
                     <label for="b" class="accordion-label font-weight-600 pad-r-md">
-                        <span class="material-icons">description</span>
-                        Pages
+                        <span class="material-icons">description</span>Pages
                     </label>
                     <ul class="accordion-content fluid">
                         <li><a>About</a></li>
@@ -612,6 +608,11 @@ line breaks.
                     </ul>
                 </div>
             </li>
+            <li><a><span class="material-icons">settings</span>Setting</a></li>
+            <li><a><span class="material-icons">help</span>Help</a></li>
+        </ul>
+        <hr class="mar-lr-md">
+        <ul>
             <li><a><span class="material-icons">settings</span>Setting</a></li>
             <li><a><span class="material-icons">help</span>Help</a></li>
         </ul>

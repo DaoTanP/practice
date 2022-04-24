@@ -308,12 +308,12 @@
 /* Works on Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--gray-300) transparent /* #00000050 */;
+  scrollbar-color: var(--gray-500) transparent /* #00000050 */;
 }
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 *::-webkit-scrollbar-track {
@@ -321,9 +321,9 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--gray-300);
+  background-color: var(--gray-500);
   border-radius: 20px;
-  border: 2px solid var(--gray-400);
+  border: 1px solid var(--gray-500);
 }
 /* #endregion Scrollbar */
 
@@ -341,8 +341,9 @@ html{
 }
 
 hr{
-    border: 1px solid var(--border-color);
-    background-color: var(--border-color);
+    border: none;
+    border-top: 1px solid var(--border-color);
+    background-color: transparent;
 }
 
 /* #region Typography */
@@ -1375,7 +1376,8 @@ header .search-bar { min-width: 25%; max-width: 50%; width: fit-content; }
     vertical-align: middle;
     cursor: pointer;
     display: inline-block;
-    font-size: x-large;
+    font-size: medium;
+    margin-right: 1em;
 }
 .nav-toggle-btn:hover::before { background-color: #00000050 }
 #nav-toggle:checked ~ * .nav-toggle-btn::before{
@@ -1413,50 +1415,49 @@ nav {
     font-weight: 700;
 }
 nav ul { list-style: none; padding: 0; margin: 0 }
-nav ul li{
-    line-height: 10vh;
-    display: block;
-    width: 100%;
-}
-nav ul li >.logo{
-    line-height: 10vh;
-    display: block;
+nav>ul{ padding: .75rem 0; }
+nav .nav-header{
+    height: 56px;
+    display: flex;
+    align-items: center;
+    margin: 0;
     width: 100%;
     text-decoration: none;
 }
-nav ul li >*:not(.logo){
+nav .nav-header label{
     padding-left: 1em;
-    line-height: 1.5vh;
+}
+nav ul li >*{
+    padding-left: 1.5em;
+    line-height: 2.5;
     display: block;
     width: 100%;
     text-decoration: none;
     color: var(--text);
 }
-nav .material-icons { margin-right: 0.5em }
-nav ul li >*:not(.logo, .accordion):hover{
-    padding-left: 1.5em;
+nav .material-icons { margin-right: 1em }
+nav ul li >*:not(.accordion):hover{
+    padding-left: 2em;
     color: var(--color-dark);
     background-color: var(--gray-200);
     font-weight: 700;
     border-right: 5px solid var(--color);
+    text-decoration: none;
 }
 nav ul li >.accordion{
     padding-left: 0;
 }
-nav ul li >.accordion:hover{
-    padding-left: 0;
-}
 nav ul li .accordion-label{
-    padding-left: 1em;
+    padding-left: 1.5em;
 }
 nav ul li .accordion-content a{
-    padding-left: 4em;
-}
-nav ul li .accordion-content a:hover{
     padding-left: 4.5em;
 }
+nav ul li .accordion-content a:hover{
+    padding-left: 5em;
+}
 nav ul li .accordion-label:hover{
-    padding-left: 1.5em;
+    padding-left: 2em;
     color: var(--color-dark);
     background-color: var(--gray-200);
     font-weight: 700;
@@ -1590,7 +1591,7 @@ html[data-theme="dark"] .dropdown-content {
 html[data-theme="dark"] .dropdown-content > *:hover {
   background-color: var(--color-dark);
 }
-html[data-theme="dark"] nav ul li >*:not(.logo, .accordion):hover{
+html[data-theme="dark"] nav ul li >*:not(.accordion):hover{
     color: var(--color-light);
     background-color: var(--gray-500);
 }
