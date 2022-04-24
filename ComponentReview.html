@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <title>Đăng kí tài khoản</title>
+    <link rel="stylesheet" href="poly-theme-style.css">
+    <script>
+        function modeSwitch(element) {
+            if (element.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        }
+        function changeSaturate(value) {
+            document.body.style.filter = "saturate(" + value + "%)";
+        }
+    </script>
+</head>
+
+<!-- <body class="color-cyan">
+    <input type="checkbox" class="disappeared" id="nav-toggle">
+    <header>
+        <div>
+            <label for="nav-toggle" class="nav-toggle-btn"></label>
+            <a href="dangNhap.html" class="logo"><span class="material-icons">explore</span>Explora</a>
+        </div>
+        <input type="text" class="search-bar bordered-xs bordered-cyan pad-lr-md" placeholder="Search">
+        <div>
+            <button class="btn txt-cyan borderless pad-sm rounded-xs">Sign In</button>
+            <button class="btn txt-white borderless bg-red pad-sm rounded-xs">Create Account</button>
+            <input type="checkbox" id="dark mode" class="neumorphism chkbox-toggle" onclick="modeSwitch(this)">
+            <label for="dark mode" class="pad-md">Dark mode</label>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="display-block pad-lr-md">
+                <div class="logo">
+                    <label for="nav-toggle" class="nav-toggle-btn"></label>
+                    <a href="" class="txt-no-decoration font-lg">Explora</a>
+                </div>
+            </li>
+            <li><a href=""><span class="material-icons">search</span>search</a></li>
+            <li><a href=""><span class="material-icons">manage_accounts</span>account</a></li>
+            <li>
+                <div class="dropdown direction-right">
+                    <span><span class="material-icons">description</span>pages</span>
+                    <div class="dropdown-content slide-down">
+                        <a href="./html/pages/about.html">About</a>
+                        <div class="accordion">
+                            <input type="checkbox" id="b" class="disappeared accordion-toggle">
+                            <label for="b" class="accordion-label font-weight-600">Pricing</label>
+                            <ul class="accordion-content">
+                                <li><a href="./html/pages/about.html">About</a></li>
+                                <li><a href="./html/pages/contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown direction-right">
+                            Contact
+                            <div class="dropdown-content slide-down">
+                                <a href="./html/pages/about.html">About</a>
+                                <a href="./html/pages/pricing.html">Pricing</a>
+                                <a href="./html/pages/contact.html">Contact</a>
+                                <a href="./html/pages/sign-in.html">Sign in</a>
+                                <a href="./html/pages/sign-up.html">Sign up</a>
+                            </div>
+                        </div>
+                        <a href="./html/pages/sign-in.html">Sign in</a>
+                        <a href="./html/pages/sign-up.html">Sign up</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href=""><span class="material-icons">settings</span>setting</a></li>
+            <li><a href=""><span class="material-icons">help</span>help</a></li>
+            <li><a href=""><span class="material-icons">logout</span>log out</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="mar-t-md mar-b-md">
+            <div id="filter">
+                <label for="saturate" class="txt-font-inherited">Saturate</label>
+                <input type="range" class="neumorphism" name="saturate" min="0" max="100" value="0"
+                    oninput="changeSaturate(this.value)">
+            </div>
+        </div>
+        <div class="dropdown bg-green color-green pad-sm mar-tb-lg">
+            <span>Pages</span>
+            <div class="dropdown-content fade-in">
+                <a href="./html/pages/about.html">About Lorem ipsum.</a>
+                <a href="./html/pages/pricing.html">Pricing</a>
+                <a href="./html/pages/contact.html">Contact</a>
+                <a href="./html/pages/sign-in.html">Sign in</a>
+                <a href="./html/pages/sign-up.html">Sign up</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion width-25 bg-green pad-sm rounded-sm mar-lr-auto mar-tb-md">
+        <input type="checkbox" id="a" class="disappeared accordion-toggle">
+        <label for="a" class="accordion-label font-weight-600">Accordion Title</label>
+        <div class="accordion-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed aperiam corrupti reprehenderit. Omnis
+            placeat, minus provident ad earum accusantium fuga excepturi! Qui reiciendis maxime nisi id placeat sint
+            culpa ex suscipit sapiente natus! Asperiores vel minima praesentium consequatur unde sapiente.
+        </div>
+    </div>
+
+    <div class="flex-container width-75 mar-auto gap-lg">
+        <div class="card bordered-xs">
+            <img src="https://i.ytimg.com/vi/X1XoH8IFXFk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCQuuy217wZOBU6Js4h7ak5EOZXpA"
+                alt="" class="img-fluid">
+            <div class="card-body">
+                <img src="https://yt3.ggpht.com/dW9nwrV26jW-SxcXQFEKSQ2moHLfYuqm_F4pYIEwBL7DQ8ddRdgFOoSCzhrOmSymRdPSX7NW=s68-c-k-c0x00ffffff-no-rj"
+                    alt="">
+                <div class="card-detail">
+                    <h6 class="txt-wrapped max-line-2 mar-tb-xs">TWO WEEKS IN VIETNAM! | Hanoi Street Food &
+                        Train
+                        Street | Travel Vlog Part 2
+                    </h6>
+                    <a>Haylsa & Kyle</a>
+                    <p class="font-xxs">54 N lượt xem - 2 tháng trước</p>
+                </div>
+            </div>
+        </div>
+        <div class="card bordered-xs">
+            <img src="https://i.ytimg.com/vi/76Wygb_Aqz0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCirr-hLoL2GAQrnuN5qQaUfBEdrg"
+                alt="" class="img-fluid">
+            <div class="card-body">
+                <img src="https://yt3.ggpht.com/E5w1N_06d02uFf-puZONZy6phiuxJuJNGA2S2RZqUuy7txp27FWjebxQJtk0rGSTE34S09J5=s88-c-k-c0x00ffffff-no-rj"
+                    alt="">
+                <div class="card-detail">
+                    <h6 class="txt-wrapped max-line-2 mar-tb-xs">Road Trip 🚐 - An Indie/Pop/Folk/Rock Playlist
+                        | Vol. 1
+                    </h6>
+                    <a>alexrainbirdMusic</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xl">
+        <form class="mar-tb-md pad-md rounded-md bordered-xs bg-white" action="" method="post">
+            <div
+                class="material-icons font-xxl txt-center bordered-xs bordered-green display-block max-width-50 mar-lr-auto pad-xs rounded-sm">
+                shopping_cart</div>
+            <div class="line mar-tb-md">
+                <input type="text" class="width-100 txt-gray bordered-xs color-green rounded-md pad-sm"
+                    placeholder="Tài khoản" id="username" name="username">
+            </div>
+            <div class="line mar-tb-md">
+                <input type="password" class="width-100 txt-gray bordered-xs color-green rounded-md pad-sm"
+                    placeholder="Mật khẩu" id="password" name="password">
+            </div>
+            <div class="line">
+                <input type="checkbox" class="chkbox" id="c">
+                <label for="c" class="pad-sm">Label</label>
+            </div>
+            <input type="submit" value="Đăng nhập" class="btn btn-filled btn-material txt-white 
+                font-weight-700 rounded-sm">
+        </form>
+    </div>
+
+    <div class="container">
+        <p class="display-4">Typography</p>
+        <div class="container-fluid">
+            <h1>Showers across the W</h1>
+            <h2>Give this quartet a few</h2>
+            <h3>The Vatican transitions to a</h3>
+            <h4>Great American Bites: Telluride's Oak, The</h4>
+            <h5>Author Diane Alberts loves her some good</h5>
+            <h6>With the success of young-adult book-to-movie</h6>
+            <h5>Paragraph</h5>
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            <h6 class="display-inline">Donec ullamcorper</h6> nulla non metus auctor fringilla. Duis mollis, est non
+            commodo luctus, nisi
+            erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+            <h5>Image</h5>
+            <img src="http://designmodo.github.io/Flat-UI/docs/assets/images/example-image." alt="example-image"
+                class="width-100 mar-lr-auto">
+            <p class="small"><strong>Note:</strong> gravida at eget metus. Duis mollis, est non commodo luctus,
+                nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+            <h5>Lead Text</h5>
+            <p class="lead">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <h5>Quote</h5>
+            <blockquote class="blockquote">
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                    ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus.</p>
+                <footer class="blockquote-footer">Steve Jobs, CEO Apple</footer>
+            </blockquote>
+            <h5>Small Font</h5>
+            <p class="small">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat
+                porttitor ligula, eget lacinia odio sem nec elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, perferendis!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>h1 Bootstrap heading (2.5rem = 40px)</h1>
+        <h2>h2 Bootstrap heading (2rem = 32px)</h2>
+        <h3>h3 Bootstrap heading (1.75rem = 28px)</h3>
+        <h4>h4 Bootstrap heading (1.5rem = 24px)</h4>
+        <h5>h5 Bootstrap heading (1.25rem = 20px)</h5>
+        <h6>h6 Bootstrap heading (1rem = 16px)</h6>
+    </div>
+
+    <div class="container">
+        <h1>Display Headings</h1>
+        <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight):
+        </p>
+        <h1 class="display-1">Display 1</h1>
+        <h1 class="display-2">Display 2</h1>
+        <h1 class="display-3">Display 3</h1>
+        <h1 class="display-4">Display 4</h1>
+    </div>
+
+    <div class="container">
+        <h1>Lighter, Secondary Text</h1>
+        <p>The small element is used to create a lighter, secondary text in any heading:</p>
+        <h1>h1 heading <small>secondary text</small></h1>
+        <h2>h2 heading <small>secondary text</small></h2>
+        <h3>h3 heading <small>secondary text</small></h3>
+        <h4>h4 heading <small>secondary text</small></h4>
+        <h5>h5 heading <small>secondary text</small></h5>
+        <h6>h6 heading <small>secondary text</small></h6>
+    </div>
+
+    <div class="container">
+        <blockquote class="blockquote">
+            <p>For 50 years, <abbr
+                    title="World Wide Fund for Nature International non-governmental organization">WWF</abbr>
+                has been protecting the future of nature. The world's <q>leading conservation</q> organization,
+                <abbr title="World Wide Fund for Nature International non-governmental organization">WWF</abbr> works in
+                100 countries and is supported by 1.2 million members in the United States and close to 5 million
+                globally.
+            </p>
+            <footer class="blockquote-footer">From WWF's website</footer>
+        </blockquote>
+
+        <h1>Description Lists</h1>
+        <p>The dl element indicates a description list:</p>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl>
+
+        <h1>Code Snippets</h1>
+        <p>Inline snippets of code should be embedded in the code element:</p>
+        <p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> defines a section
+            in a
+            document.</p>
+
+        <h1>Keyboard Inputs <small>kbd</small></h1>
+        <p>To indicate input that is typically entered via the keyboard, use the kbd element:</p>
+        <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+    </div>
+
+    <div class="container disappeared">
+        <h1>Multiple Code Lines</h1>
+        <p>For multiple lines of code, use the pre element:</p>
+        <pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks.
+    </pre>
+    </div>
+
+    <div class="container disappeared">
+        <h2>Typography</h2>
+        <p>Use the .lead class to make a paragraph "stand out":</p>
+        <p class="lead">This paragraph stands out.</p>
+        <p>This is a regular paragraph.</p>
+    </div>
+
+    <div class="container disappeared">
+        <h2>Typography</h2>
+        <p>Use the .small class to make the text smaller:</p>
+        <p class="small">This paragraph is smaller.</p>
+        <p>This is a regular paragraph.</p>
+    </div>
+
+    <div class="container">
+        <h2>Typography</h2>
+        <p class="txt-left">Left-aligned text.</p>
+        <p class="txt-right">Right-aligned text.</p>
+        <p class="txt-center">Center-aligned text.</p>
+        <p class="txt-justify">Justified text. Justified text. Justified text. Justified text. Justified text.
+            Justified text.</p>
+        <p class="txt-nowrap">No wrap text. No wrap text. No wrap text. No wrap text. No wrap text. No wrap text. No
+            wrap text. No wrap text.</p>
+        <p class="txt-wrapped">Max line: 2. Max line: 2. Max line: 2. Max line: 2. Max line: 2. Max line: 2.
+            Max
+            line: 2. Max line: 2. Max line: 2. Max line: 2. Max line: 2. End here.</p>
+        <p><strong>Tip:</strong> Try to resize the browser window to see the behaviour of justify and nowrap.</p>
+    </div>
+
+    <div class="container disappeared">
+        <h2>Text break / Word break</h2>
+        <p>The .text-break class prevents long text from breaking layout.</p>
+        <p>With .text-break:</p>
+        <p class="txt-break">
+            AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+        </p>
+        <p>Without .text-break:</p>
+        <p>AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz
+        </p>
+    </div>
+
+    <div class="container disappeared">
+        <h2>Code</h2>
+
+        <p>For multiple lines of code, use the pre element:</p>
+        <pre>Text in a pre element
+      is displayed in a fixed-width
+      font, and it preserves
+      both      spaces and
+      line breaks.</pre>
+
+        <p>If you add the .pre-scrollable class, the pre element gets a max-height of 340px and provides a y-axis
+            scrollbar:
+        </p>
+        <pre class="pre-scrollable">Text in a pre element
+      is displayed in a fixed-width
+      font, and it preserves
+      both      spaces and
+      line breaks.</pre>
+    </div>
+
+    <div class="container disappeared">
+        <h2>Basic Table</h2>
+        <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <div class="panel color-red">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first
+                projects on
+                the web.</p>
+        </div>
+        <div class="panel color-orange">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive,
+                mobile-first
+                projects on
+                the web.</p>
+        </div>
+        <div class="panel color-yellow">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive,
+                mobile-first
+                projects on
+                the web.</p>
+        </div>
+        <div class="panel color-green">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive,
+                mobile-first
+                projects on
+                the web.</p>
+        </div>
+        <div class="panel color-mint">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive,
+                mobile-first
+                projects on
+                the web.</p>
+        </div>
+        <div class="panel color-cyan">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive,
+                mobile-first
+                projects on
+                the web.</p>
+        </div>
+        <div class="panel color-blue">
+            <h1>Bootstrap Tutorial</h1>
+            <p class="txt-purple">Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive,
+                mobile-first
+                projects on
+                the web.</p>
+        </div>
+        <div class="panel color-purple">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive,
+                mobile-first
+                projects on
+                the web.</p>
+        </div>
+        <div class="panel color-pink">
+            <h1>Bootstrap Tutorial</h1>
+            <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive,
+                mobile-first
+                projects on
+                the web.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Alerts</h2>
+        <p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
+        <div class="alert color-green txt-green">
+            <div onclick="this.parentElement.style.display='none'" class="link float-right">&times;</div>
+            <strong>Success!</strong> This alert box could indicate a successful or positive action.
+        </div>
+        <div class="alert color-cyan txt-cyan">
+            <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+        </div>
+        <div class="alert color-yellow txt-yellow">
+            <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+        </div>
+        <div class="alert color-red txt-red">
+            <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+        </div>
+        <div class="alert color-blue txt-blue">
+            <strong>Primary!</strong> Indicates an important action.
+        </div>
+        <div class="alert color-purple txt-purple">
+            <strong>Secondary!</strong> Indicates a slightly less important action.
+        </div>
+        <div class="alert color-pink txt-pink">
+            <strong>Dark!</strong> Dark grey alert. You should <a href="#" class="alert-link">read this message</a>
+        </div>
+        <div class="alert color-orange txt-orange">
+            <strong>Light!</strong> Light grey alert. You should <a href="#" class="alert-link">read this message</a>
+        </div>
+        <div class="alert bordered color-mint">
+            <div onclick="this.parentElement.style.display='none'" class="float-right">&times;</div>
+            <strong class="line">Success!</strong> This alert box could indicate a successful or positive action.
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Button</h1>
+        <code class="txt-center">Ghost Button</code><br>
+        <div class="grid col-3 gap-lg pad-md mar-md bordered-xs">
+            <button class="btn color-red borderless pad-sm rounded-xs">Button</button>
+            <button class="btn color-orange borderless pad-sm rounded-xs">Button</button>
+            <button class="btn color-yellow borderless pad-sm rounded-xs">Button</button>
+            <button class="btn color-green borderless pad-sm rounded-xs">Button</button>
+            <button class="btn color-mint borderless pad-sm rounded-xs">Button</button>
+            <button class="btn color-cyan borderless pad-sm rounded-xs">Button</button>
+            <button class="btn color-blue borderless pad-sm rounded-xs">Button</button>
+            <button class="btn color-purple borderless pad-sm rounded-xs">Button</button>
+            <button class="btn color-pink borderless pad-sm rounded-xs">Button</button>
+            <button class="btn borderless pad-sm rounded-xs" disabled>Button</button>
+        </div>
+        <code class="txt-center">Outlined Button</code><br>
+        <div class="grid col-3 gap-lg pad-md mar-md bordered-xs style-material">
+            <button class="btn color-red bordered-xxs pad-sm rounded-xs">Button</button>
+            <button class="btn color-orange bordered-xxs pad-sm rounded-xs">Button</button>
+            <button class="btn color-yellow bordered-xxs pad-sm rounded-xs">Button</button>
+            <button class="btn color-green bordered-xxs pad-sm rounded-xs">Button</button>
+            <button class="btn color-mint bordered-xxs pad-sm rounded-xs">Button</button>
+            <button class="btn color-cyan bordered-xxs pad-sm rounded-xs">Button</button>
+            <button class="btn color-blue bordered-xxs pad-sm rounded-xs">Button</button>
+            <button class="btn color-purple bordered-xxs pad-sm rounded-xs">Button</button>
+            <button class="btn color-pink bordered-xxs pad-sm rounded-xs">Button</button>
+            <button class="btn bordered-xxs pad-sm rounded-xs" disabled>Button</button>
+        </div>
+        <code class="txt-center">Button</code><br>
+        <div class="grid col-3 gap-lg pad-md mar-md bordered-xs style-material">
+            <button class="btn btn-filled color-red pad-sm rounded-xs">Button</button>
+            <button class="btn btn-filled color-orange pad-sm rounded-xs">Button</button>
+            <button class="btn btn-filled color-yellow pad-sm rounded-xs">Button</button>
+            <button class="btn btn-filled color-green pad-sm rounded-xs">Button</button>
+            <button class="btn btn-filled color-mint pad-sm rounded-xs">Button</button>
+            <button class="btn btn-filled color-cyan pad-sm rounded-xs">Button</button>
+            <button class="btn btn-filled color-blue pad-sm rounded-xs">Button</button>
+            <button class="btn btn-filled color-purple pad-sm rounded-xs">Button</button>
+            <button class="btn btn-filled color-pink pad-sm rounded-xs">Button</button>
+            <button class="btn btn-filled  pad-sm rounded-xs" disabled>Button</button>
+        </div>
+    </div>
+
+    <table class="table striped container-md mar-tb-md color-blue">
+        <thead class="bg-orange txt-white">
+            <tr>
+                <th>
+                    <div class="dropdown">
+                        <span>Firstname</span>
+                        <div class="dropdown-content">
+                            <a href="./html/pages/about.html">About</a>
+                            <a href="./html/pages/pricing.html">Pricing</a>
+                            <a href="./html/pages/contact.html">Contact</a>
+                            <a href="./html/pages/sign-in.html">Sign in</a>
+                            <a href="./html/pages/sign-up.html">Sign up</a>
+                        </div>
+                    </div>
+                </th>
+                <th>Lastname</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Wick</td>
+                <td>john@example.com</td>
+            </tr>
+            <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+            </tr>
+            <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+            </tr>
+            <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="container">
+
+    </div>
+</body> -->
+
+<body class="color-green">
+    <input type="checkbox" class="disappeared" id="nav-toggle">
+    <header>
+        <div>
+            <label for="nav-toggle" class="nav-toggle-btn"></label>
+            <a><span class="material-icons">explore</span>
+                <span class="font-cursive font-lg">Flat</span>
+            </a>
+        </div>
+        <input type="text" class="search-bar txt-white bordered-xs rounded-sm pad-lr-md" placeholder="Search">
+        <div>
+            <button class="btn borderless rounded-xs">Sign In</button>
+            <button class="btn btn-filled color-red rounded-xs">Create Account</button>
+            <input type="checkbox" id="dark mode" class="chkbox-toggle" onclick="modeSwitch(this)">
+            <label for="dark mode" class="mar-lr-md pad-lr-sm">Dark</label>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="display-block pad-lr-md">
+                <div class="logo">
+                    <label for="nav-toggle" class="nav-toggle-btn"></label>
+                    <a class="font-cursive font-lg">Flat</a>
+                </div>
+            </li>
+            <li><a><span class="material-icons">search</span>Search</a></li>
+            <li>
+                <div class="accordion">
+                    <input type="checkbox" id="account-nav" checked class="disappeared accordion-toggle">
+                    <label for="account-nav" class="nav-selected accordion-label font-weight-600 pad-r-md">
+                        <span class="material-icons">manage_accounts</span>
+                        Account
+                    </label>
+                    <ul class="accordion-content fluid">
+                        <li class="nav-selected"><a>Profile</a></li>
+                        <li><a>Sign in</a></li>
+                        <li><a>Log out</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="accordion">
+                    <input type="checkbox" id="b" class="disappeared accordion-toggle">
+                    <label for="b" class="accordion-label font-weight-600 pad-r-md">
+                        <span class="material-icons">description</span>
+                        Pages
+                    </label>
+                    <ul class="accordion-content fluid">
+                        <li><a>About</a></li>
+                        <li><a>Contact</a></li>
+                        <li><a>Pricing</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a><span class="material-icons">settings</span>Setting</a></li>
+            <li><a><span class="material-icons">help</span>Help</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>h1 Bootstrap heading (2.5rem = 40px)</h1>
+        <h2>h2 Bootstrap heading (2rem = 32px)</h2>
+        <h3>h3 Bootstrap heading (1.75rem = 28px)</h3>
+        <h4>h4 Bootstrap heading (1.5rem = 24px)</h4>
+        <h5>h5 Bootstrap heading (1.25rem = 20px)</h5>
+        <h6>h6 Bootstrap heading (1rem = 16px)</h6>
+    </div>
+
+    <div class="container">
+        <h1>Display Headings</h1>
+        <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight):
+        </p>
+        <h1 class="display-1">Display 1</h1>
+        <h1 class="display-2">Display 2</h1>
+        <h1 class="display-3">Display 3</h1>
+        <h1 class="display-4">Display 4</h1>
+    </div>
+
+    <div class="container">
+        <h1>Lighter, Secondary Text</h1>
+        <p>The small element is used to create a lighter, secondary text in any heading:</p>
+        <h1>h1 heading <small>secondary text</small></h1>
+        <h2>h2 heading <small>secondary text</small></h2>
+        <h3>h3 heading <small>secondary text</small></h3>
+        <h4>h4 heading <small>secondary text</small></h4>
+        <h5>h5 heading <small>secondary text</small></h5>
+        <h6>h6 heading <small>secondary text</small></h6>
+    </div>
+
+    <div class="container-sm">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam veritatis ut harum, assumenda perferendis ex
+            natus at! Pariatur, quaerat inventore. Veritatis maxime possimus animi, beatae itaque fuga aut doloremque,
+            quibusdam, nobis officia sequi rerum! Modi neque impedit dolor fugiat maxime a ab quidem hic quasi deserunt
+            laudantium nobis eaque, rem numquam quas aspernatur culpa magni, molestias temporibus. Odio nobis officia et
+            nihil rerum numquam cupiditate hic dignissimos fugit laboriosam quo repellat beatae, deserunt, quam illum
+            veniam
+            explicabo at error autem. Necessitatibus, ad. Ipsa alias accusamus quibusdam tempora corrupti in voluptas
+            veniam
+            odio modi voluptates excepturi consequuntur quod, facilis voluptatem optio?
+        </p>
+        <div class="flex-container width-75 mar-auto mar-tb-lg gap-lg align-cross-center">
+            <div class="card bordered-xs">
+                <img src="https://i.ytimg.com/vi/X1XoH8IFXFk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCQuuy217wZOBU6Js4h7ak5EOZXpA"
+                    alt="" class="img-fluid">
+                <div class="card-body">
+                    <img src="https://yt3.ggpht.com/dW9nwrV26jW-SxcXQFEKSQ2moHLfYuqm_F4pYIEwBL7DQ8ddRdgFOoSCzhrOmSymRdPSX7NW=s68-c-k-c0x00ffffff-no-rj"
+                        alt="">
+                    <div class="card-detail">
+                        <h6 class="txt-wrapped max-line-2 mar-tb-xs">TWO WEEKS IN VIETNAM! | Hanoi Street Food
+                            &
+                            Train
+                            Street | Travel Vlog Part 2
+                        </h6>
+                        <a>Haylsa & Kyle</a>
+                        <p class="font-xxs">54 N lượt xem - 2 tháng trước</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card bordered-xs">
+                <img src="https://i.ytimg.com/vi/76Wygb_Aqz0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCirr-hLoL2GAQrnuN5qQaUfBEdrg"
+                    alt="" class="img-fluid">
+                <div class="card-body">
+                    <img src="https://yt3.ggpht.com/E5w1N_06d02uFf-puZONZy6phiuxJuJNGA2S2RZqUuy7txp27FWjebxQJtk0rGSTE34S09J5=s88-c-k-c0x00ffffff-no-rj"
+                        alt="">
+                    <div class="card-detail">
+                        <h6 class="txt-wrapped max-line-2 mar-tb-xs">Road Trip 🚐 - An Indie/Pop/Folk/Rock Playlist
+                            | Vol. 1
+                        </h6>
+                        <a>alexrainbirdMusic</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam veritatis ut harum, assumenda perferendis ex
+            natus at! Pariatur, quaerat inventore. Veritatis maxime possimus animi, beatae itaque fuga aut doloremque,
+            quibusdam, nobis officia sequi rerum! Modi neque impedit dolor fugiat maxime a ab quidem hic quasi deserunt
+            laudantium nobis eaque, rem numquam quas aspernatur culpa magni, molestias temporibus. Odio nobis officia et
+            nihil rerum numquam cupiditate hic dignissimos fugit laboriosam quo repellat beatae, deserunt, quam illum
+            veniam
+            explicabo at error autem. Necessitatibus, ad. Ipsa alias accusamus quibusdam tempora corrupti in voluptas
+            veniam
+            odio modi voluptates excepturi consequuntur quod, facilis voluptatem optio?
+        </p>
+    </div>
+</body>
+
+</html>
