@@ -488,15 +488,15 @@ kbd {
 }
 
 .txt-white  { color: var(--gray-100) }
-.txt-red    { color: var(--darker-red) }
-.txt-orange { color: var(--darker-orange) }
-.txt-yellow { color: var(--darker-yellow) }
-.txt-green  { color: var(--darker-green) }
-.txt-mint   { color: var(--darker-mint) }
-.txt-cyan   { color: var(--darker-cyan) }
-.txt-blue   { color: var(--darker-blue) }
-.txt-purple { color: var(--darker-purple) }
-.txt-pink   { color: var(--darker-pink) }
+.txt-red    { color: var(--dark-red) }
+.txt-orange { color: var(--dark-orange) }
+.txt-yellow { color: var(--dark-yellow) }
+.txt-green  { color: var(--dark-green) }
+.txt-mint   { color: var(--dark-mint) }
+.txt-cyan   { color: var(--dark-cyan) }
+.txt-blue   { color: var(--dark-blue) }
+.txt-purple { color: var(--dark-purple) }
+.txt-pink   { color: var(--dark-pink) }
 .txt-gray   { color: var(--gray-600) }
 
 .bg-white   { background-color: var(--gray-100) }
