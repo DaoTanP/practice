@@ -1,14 +1,15 @@
 * {
+    /* Five blue shade of Facebook 2015 are hex values 0e1f56, 3b5998, 6d84b4, afbdd4, and d8dfea, from darkest to lightest. The most commonly known Facebook Blue is the second one, 3b5998. */
     box-sizing: border-box;
     --pad-h: 2rem;
     --flex-6: 6;
     --flex-4: 4;
     --border-dark: hsl(221, 44%, 31%);
     --border-light: #8b9dc3;
+    font-family: 'Segoe UI', Arial, Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, #fff, #dfe3ee);
