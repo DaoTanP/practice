@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="guestBook.css">
+    <title>Guest Book</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Guest Book</h1>
+        <form id="guestBook" runat="server">
+            <div class="input-group">
+                <label for="txtTieuDe">Tiêu đề</label>
+                <input type="text" id="txtTieuDe">
+            </div>
+            <div class="input-group">
+                <label for="txtHoTen">Họ tên</label>
+                <input type="text" id="txtHoTen">
+            </div>
+            <div class="input-group">
+                <label for="txtEmail">Email</label>
+                <input type="email" id="txtEmail">
+            </div>
+            <div class="input-group">
+                <label for="txtNoiDung">Nội dung</label>
+                <textarea id="txtNoiDung"></textarea>
+            </div>
+            <div class="input-group">
+                <p style="visibility: hidden;">.</p>
+                <div><button type="submit">Gửi nội dung</button></div>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <h1>Danh sách comment</h1>
+        <div class="comment-container">
+            <div class="comment">
+                <div class="avatar"></div>
+                <div class="comment-content">
+                    <h4 class="name">Lorem</h4>
+                    <p class="email">Lorem@example.com</p>
+                    <p class="title">Lorem, ipsum dolor.</p>
+                    <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+                        voluptatum.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="comment-container">
+            <div class="comment">
+                <div class="avatar"></div>
+                <div class="comment-content">
+                    <h4 class="name">Lorem</h4>
+                    <p class="email">Lorem@example.com</p>
+                    <p class="title">Lorem, ipsum dolor.</p>
+                    <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+                        voluptatum.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="comment-container">
+            <div class="comment">
+                <div class="avatar"></div>
+                <div class="comment-content">
+                    <h4 class="name">Lorem</h4>
+                    <p class="email">Lorem@example.com</p>
+                    <p class="title">Lorem, ipsum dolor.</p>
+                    <p class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+                        voluptatum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
