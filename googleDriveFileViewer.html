@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="googleDriveFileViewer.css">
+    <title>Google Drive</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <input type="checkbox" id="btn-panel-upload" checked>
+        <header>
+            <h1>File của tôi</h1>
+            <label class="btn btn-upload" for="btn-panel-upload">
+                <span class="icon-plus"></span>Tải lên
+            </label>
+        </header>
+        <main id="panel-upload">
+            <div class="panel-upload-content">
+                <header>
+                    <h3>Tải lên</h3>
+                </header>
+                <form>
+                    <label for="input-file" class="drag-drop">
+                        <div class="icon-upload"></div>
+                        <strong>Kéo tệp vào đây</strong>
+                        hoặc
+                        <input type="file" id="input-file" required>
+                    </label>
+                </form>
+            </div>
+
+            <div class="panel-upload-content">
+                <header>
+                    <h3>Đang tải lên</h3>
+                </header>
+                <div class="file-table">
+                    <button class="btn file"><span class="icon-file"></span>
+                        <span class="txt-wrapped">Lorem ipsum dolor
+                            sit amet,
+                            consectetur adipisicing elit. Accusantium, at!
+                        </span>
+                        <progress></progress>
+                    </button>
+                    <button class="btn file"><span class="icon-file"></span>Lorem</button>
+                </div>
+            </div>
+        </main>
+        <main>
+            <header>
+                <h3>Tệp</h3>
+                <button class="btn btn-sort">Được thêm gần nhất <span class="icon-arrow"></span></button>
+            </header>
+            <div class="file-container">
+                <button class="btn file"><span class="icon-file"></span>
+                    <div class="txt-wrapped">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Accusantium, at!
+                    </div>
+                </button>
+                <button class="btn file"><span class="icon-file"></span>Lorem</button>
+                <button class="btn file"><span class="icon-file"></span>Lorem</button>
+                <button class="btn file"><span class="icon-file"></span>Lorem</button>
+                <button class="btn file"><span class="icon-file"></span>Lorem</button>
+                <button class="btn file"><span class="icon-file"></span>Lorem</button>
+                <button class="btn file"><span class="icon-file"></span>Lorem</button>
+                <button class="btn file"><span class="icon-file"></span>Lorem</button>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

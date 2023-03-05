@@ -1,0 +1,258 @@
+:root {
+    font-size: 16px;
+    --font: Geneva, 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+    color: rgb(60, 64, 67);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 320px;
+    width: 100%;
+}
+p, h1, h2, h3, h4, h5, h6, small {
+    line-height: 1.5;
+    margin: 0;
+}
+.main-container {
+    width: 100%;
+    height: 100%;
+    /* margin: 0 5vw; */
+    margin: 0 max(0px, min(calc(1vw * 5), calc((100% - 420px + 1px) * 9999)));
+}
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    border-bottom: 1px solid #dadce0;
+}
+header h1 {
+    font-weight: normal;
+    font-size: 1.25rem;
+    margin: 0;
+    margin-right: auto;
+}
+.btn {
+    display: inline-flex;
+    align-items: center;
+    color: rgb(60, 64, 67);
+    font-weight: 500;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    user-select: none;
+    position: relative;
+    border-width: 0;
+    background-color: #fff;
+    padding: 0;
+    font-family: var(--font);
+    font-size: 1rem;
+}
+.btn-upload {
+    gap: 0.8125rem;
+    height: 3rem;
+    min-width: 7.5rem;
+    padding: 0 1.5rem 0 0.625rem;
+    background-color: #fff;
+    border-radius: 6.25rem;
+    border-width: 0;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+    fill: rgb(60, 64, 67);
+    place-content: center start;
+    transition: box-shadow .08s linear;
+}
+.btn:hover,
+.btn:focus {
+    background-color: rgb(240, 240, 240);
+}
+.btn-upload:hover {
+    box-shadow: 0 1px 3px 0 rgba(60, 64, 67, .3), 0 4px 8px 3px rgba(60, 64, 67, .15);
+}
+.btn-upload:active {
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+}
+.icon-plus {
+    display: block;
+    height: 36px;
+    width: 36px;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='64px' height='64px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M5 12H19' stroke='%23323232' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M12 5L12 19' stroke='%23323232' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+#btn-panel-upload:focus~header label.btn-upload {
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 1px 3px 0 rgba(60, 64, 67, .3), 0 4px 8px 3px rgba(60, 64, 67, .15);
+}
+#btn-panel-upload:checked~header label.btn-upload {
+    background-color: rgba(25, 103, 210, .5);
+}
+#btn-panel-upload {
+    position: absolute;
+    left: -99999rem;
+    width: 0;
+}
+#panel-upload {
+    /* background-color: rgb(250, 250, 250); */
+    /* outline: 1px solid transparent; */
+    /* border-radius: 1rem; */
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in-out;
+}
+#btn-panel-upload:checked~#panel-upload {
+    /* outline-color: #dadce0; */
+    margin-top: 1rem;
+    max-height: 480px;
+    opacity: 1;
+}
+.panel-upload-content {
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.drag-drop {
+    position: relative;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto 5rem; */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px dashed #dadce0;
+    background-color: #f0f0f0;
+    box-shadow: inset .5rem .5rem .75rem #cccccc,
+        inset -.5rem -.5rem .75rem #ffffff;
+    color: #5f6368;
+    cursor: pointer;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+}
+.drag-drop:hover {
+    border-color: #5f6368;
+}
+.icon-upload {
+    display: block;
+    height: 64px;
+    width: 64px;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='64px' height='64px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M7 10V9C7 6.23858 9.23858 4 12 4C14.7614 4 17 6.23858 17 9V10C19.2091 10 21 11.7909 21 14C21 15.4806 20.1956 16.8084 19 17.5M7 10C4.79086 10 3 11.7909 3 14C3 15.4806 3.8044 16.8084 5 17.5M7 10C7.43285 10 7.84965 10.0688 8.24006 10.1959M12 12V21M12 12L15 15M12 12L9 15' stroke='%235f6368' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+input[type="file"]::file-selector-button {
+    display: inline-flex;
+    align-items: center;
+    color: rgb(60, 64, 67);
+    font-weight: 500;
+    background: none;
+    outline: none;
+    user-select: none;
+    position: relative;
+    border: 1px solid #dadce0;
+    border-radius: 0.325rem;
+    background-color: #fff;
+    padding: 0.25rem 0.5rem;
+    font-family: var(--font);
+    font-size: 1rem;
+}
+main, .main {
+    padding-top: 1rem;
+}
+main header {
+    padding: .5rem 0 1rem;
+    padding-inline: 1.375rem;
+    border-bottom: none;
+}
+main header h3 {
+    color: #5f6368;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-right: auto;
+}
+.btn-sort {
+    color: #5f6368;
+    padding: 0.5rem 1px;
+    margin: -0.5rem -1px;
+    border-radius: 0.325rem;
+}
+.btn-sort .icon-arrow {
+    margin: 0;
+    margin-left: 0.5rem;
+    display: block;
+    height: 18px;
+    width: 18px;
+    background-size: contain;
+    color: #5f6368;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18px' height='18px' viewBox='0 0 48 48' focusable='false' fill='%235f6368' class='a-s-fa-Ha-pa c-qd'%3E%3Cpath fill='none' d='M0 0h48v48H0V0z'%3E%3C/path%3E%3Cpath d='M40 24l-2.82-2.82L26 32.34V8h-4v24.34L10.84 21.16 8 24l16 16 16-16z'%3E%3C/path%3E%3C/svg%3E");
+}
+.file-container {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+.file {
+    margin: .5rem;
+    padding: 0.75rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    flex: 0 0 48px;
+    font-weight: 500;
+    color: rgb(60, 64, 67);
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid rgb(218, 220, 224);
+    transition: background-color .2s cubic-bezier(.4, 0, .2, 1);
+}
+.file:focus {
+    outline: #4d90fe solid 1px;
+    background-color: rgba(25, 103, 210, .1);
+    color: rgb(59 130 246 / 1.5);
+}
+.icon-file {
+    margin-right: 1rem;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    flex: 0 0 auto;
+    z-index: 1;
+    display: block;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg fill='rgb(60,64,67)' width='64px' height='64px' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg' stroke='rgb(60,64,67)' stroke-width='0.00016'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M13.13 4.13 9.37.37A1.26 1.26 0 0 0 8.48 0H3.75A1.25 1.25 0 0 0 2.5 1.25v13.5A1.25 1.25 0 0 0 3.75 16h8.5a1.25 1.25 0 0 0 1.25-1.25V5a1.26 1.26 0 0 0-.37-.87zm-.88 10.62h-8.5V1.25h3.48V5a1.25 1.25 0 0 0 1.25 1.27h3.77zm0-9.73H8.48V1.25L12.25 5z'%3E%3C/path%3E%3Cpath d='M5 7.5h6v1.25H5zM5 10h6v1.25H5z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+.txt-wrapped {
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+.txt-wrapped.max-line-2 {
+    -webkit-line-clamp: 2
+}
+.txt-wrapped.max-line-3 {
+    -webkit-line-clamp: 3
+}
+.txt-wrapped.max-line-4 {
+    -webkit-line-clamp: 4
+}
+.txt-wrapped.max-line-5 {
+    -webkit-line-clamp: 5
+}
+.file-table {
+    display: flex;
+    flex-direction: column;
+}
